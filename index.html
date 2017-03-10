@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<header>
+		<input type="text" id="nombre" placeholder="nombre de usuario">
+		<input type="button" value="jugar" id="empezar">
+	</header>
+	<section>
+		<div id="mesa">
+			<div class="campo" id="banca">
+				<div id="puntuacion">
+					<label id="pBanca">0</label>
+				</div>
+				<div id="perfil">
+					<div><h2>Banca</h2></div>
+					<div id="cartasB"></div>
+				</div>
+				
+				<div id="apuestas">
+				</div>
+			</div>
+			
+			<div class="campo" id="cliente">
+				<div id="puntuacion">
+					<label id="pCliente">0</label>
+				</div>
+				<div id="perfil">
+					<div><h2>Usuario</h2></div>
+					<div id="cartasC"></div>
+				</div>
+				<div id="apuestas">
+					<label id="apo"></label>
+					<input type="button" value="pedir carta" id="pedir" disabled="true">
+					<input type="button" value="Plantarse" id="retirada" disabled="true">
+					<div id="monedas">
+						<label id="total">total</label>
+						<div id="subir">
+							<input type="number" min="0" step="5" id="numero">
+							<label >€</label>
+							<input type="button" value="apostar">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="baraja">
+			<img src="cartas/baraja.PNG" alt="barajas">
+		</div>
+	</section>
+	<div id="final">
+		<div id="resultado"></div>
+		<div id="reiniciar">
+			<input type="button" value="Otra ronda" disabled="true">
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>

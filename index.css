@@ -1,0 +1,109 @@
+
+header{
+	display: flex;
+	justify-content: center;
+	
+}
+
+section{
+	margin:auto;
+	display: none;
+}
+
+#mesa{
+	border: 1px solid black;
+	width: 80%;
+	height: 580px;
+	margin:auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#baraja{
+	border: 1px solid blue;
+	width: 20%;
+	height: 580px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#baraja>img{
+	border: 1px solid black;
+	width: 120px;
+	height: 150px;
+}
+
+.campo{
+	border: 1px solid red;
+	height: 290px;
+	width: 100%;
+}
+
+#cliente,#banca{
+	display: flex;
+}
+
+#puntuacion, #apuestas{
+	border: 1px solid pink;
+	width: 20%;
+}
+
+#puntuacion{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#perfil{
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#apuestas{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#apuestas>input{
+	margin:10px;
+}
+
+.cartas{
+	border: 1px solid yellow;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#cartasC, #cartasB{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#cartasC img, #cartasB img {
+	border:1px solid violet;
+	width: 65px;
+	height: 100px;
+}
+
+#final{
+	display: none;
+	justify-content: center;
+}
+
+#monedas{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#numero{
+	width: 50px;
+}
